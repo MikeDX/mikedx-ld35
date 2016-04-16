@@ -2,5 +2,11 @@ PROGRAM LD35;
 
 BEGIN
 
+write(0,160,100,4,"LUDUM DARE #35");
+
+LOOP
+FRAME;
+END
+
 
 END

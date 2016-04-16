@@ -33,6 +33,7 @@ PROCESS player()
 BEGIN
 
 graph=1;
+size=300;
 
 LOOP
     x=mouse.x;

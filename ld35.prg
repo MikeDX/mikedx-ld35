@@ -39,7 +39,7 @@ PROCESS player()
 
 private
 gframe=1;
-
+goff=0;
 BEGIN
 
 graph=1;
@@ -49,11 +49,18 @@ LOOP
     x=mouse.x;
     y=mouse.y;
     animtimer++;
+    if(mouse.left)
+        goff++;
+        if(goff>2)
+            goff=0;
+        end
+    end
+
     if(animtimer>animspeed)
         animtimer=0;
         gframe=1+(gframe==1);
     end
-    graph = 4+gframe;
+    graph = goff*2+gframe;
 
     frame;
 

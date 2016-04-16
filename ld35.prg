@@ -5,7 +5,7 @@ BEGIN
 write(0,160,100,4,"LUDUM DARE #35");
 
 LOOP
-FRAME;
+    FRAME;
 END
 
 

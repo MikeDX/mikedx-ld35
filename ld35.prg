@@ -4,6 +4,8 @@
 
 
 PROGRAM ld35;
+GLOBAL
+shiftsound;
 
 LOCAL
 
@@ -14,7 +16,7 @@ goff=0;
 BEGIN
 set_mode(640480);
 load_fpg("ld35.fpg");
-
+shiftsound=load_wav("sfx/shift.wav",0);
 load_fnt("font2_32.fnt");
 graph=100;//load_map("gfx/divld35.pcx");
 //force_pal("gfx/divld35.pcx");
@@ -96,6 +98,7 @@ BEGIN
 graph=7;
 size=0;
 //LOOP
+sound(shiftsound,256,256);
 
 while (angle<80000*12)
 size+=20;

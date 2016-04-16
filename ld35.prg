@@ -100,9 +100,10 @@ BEGIN
 graph=7;
 size=0;
 //LOOP
-size+=10;
 
 while (angle<80000*24)
+size+=10;
+
 angle+=80000;
 
 FRAME;

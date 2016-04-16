@@ -51,11 +51,13 @@ LOOP
     x=mouse.x;
     y=mouse.y;
     animtimer++;
-    if(mouse.left && !mleft)
-        mleft=1;
-        goff++;
-        if(goff>2)
-            goff=0;
+    if(mouse.left)
+        if(!mleft)
+            mleft=1;
+            goff++;
+            if(goff>2)
+                goff=0;
+            end
         end
     else
         mleft=0;

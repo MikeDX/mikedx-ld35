@@ -46,7 +46,7 @@ BEGIN
 
 graph=1;
 size=300;
-y=360;
+y=370;
 
 LOOP
     newx=320+(sin(timer*1000)*160)/1000;

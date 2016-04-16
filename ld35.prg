@@ -51,7 +51,7 @@ LOOP
     animtimer++;
     if(animtimer>animspeed)
         animtimer=0;
-        gframe=1+(gframe==1);
+        gframe=1+(gframe);
     end
     graph = 3+gframe;
 

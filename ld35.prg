@@ -109,6 +109,7 @@ father.goff++;
             if(father.goff>2)
                 father.goff=0;
             end
+            frame;
 
 //END
 

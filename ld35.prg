@@ -20,11 +20,11 @@ x=320;
 y=200;
 size=50;
 FRAME(2400);
-set_mode(640480);
+
 load_fpg("ld35.fpg");
 force_pal("gfx/divld35.pcx");
 graph=0;
-
+set_mode(640480);
 //write(1,320,400,4,"LD #35 - Shapeshift");
 player();
 LOOP

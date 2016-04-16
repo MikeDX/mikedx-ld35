@@ -8,8 +8,9 @@ PROGRAM ld35;
 BEGIN
 set_mode(640480);
 load_fnt("font1.fnt");
-
 graph=load_map("gfx/divld35.pcx");
+force_pal("gfx/divld35.pcx");
+
 x=320;
 y=200;
 size=50;

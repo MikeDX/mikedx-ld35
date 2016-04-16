@@ -103,7 +103,8 @@ size=0;
 
 while (angle<80000*24)
 size+=10;
-
+x=father.x;
+y=father.y;
 angle+=80000;
 
 FRAME;

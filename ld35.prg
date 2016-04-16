@@ -12,6 +12,8 @@ animspeed=5;
 
 BEGIN
 set_mode(640480);
+load_fpg("ld35.fpg");
+
 load_fnt("font2_32.fnt");
 graph=load_map("gfx/divld35.pcx");
 //force_pal("gfx/divld35.pcx");
@@ -21,7 +23,6 @@ y=200;
 size=50;
 FRAME(2400);
 
-load_fpg("ld35.fpg");
 force_pal("ld35.fpg");
 graph=0;
 set_mode(640480);

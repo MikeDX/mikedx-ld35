@@ -7,7 +7,7 @@ PROGRAM ld35;
 
 BEGIN
 
-write(0,160,100,4,"LD #35 - Shapeshifting");
+write(0,160,100,4,"LD #35 - Shapeshift");
 
 LOOP
     FRAME;

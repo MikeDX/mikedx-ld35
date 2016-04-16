@@ -5,6 +5,11 @@
 
 PROGRAM ld35;
 
+LOCAL
+
+animtimer=0;
+animspeed=5;
+
 BEGIN
 set_mode(640480);
 load_fnt("font2_32.fnt");
@@ -30,6 +35,7 @@ END
 
 PROCESS player()
 
+
 BEGIN
 
 graph=1;
@@ -38,7 +44,12 @@ size=300;
 LOOP
     x=mouse.x;
     y=mouse.y;
-    graph=1+(graph==1);
+    animtimer++;
+    if(animtimer>animspeed)
+        animtimer=0;
+        graph=1+(graph==1);
+    end
+
     frame;
 
 END

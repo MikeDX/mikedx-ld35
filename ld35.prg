@@ -15,11 +15,39 @@ x=320;
 y=200;
 size=50;
 FRAME(2400);
+load_fpg("ld35.fpg");
+force_pal("gfx/divld35.pcx");
+graph=0;
 
-write(1,320,400,4,"LD #35 - Shapeshift");
-
+//write(1,320,400,4,"LD #35 - Shapeshift");
+player();
 LOOP
     FRAME;
 END
 
 END
+
+
+PROCESS player()
+
+BEGIN
+
+graph=1;
+
+LOOP
+    x=mouse.x;
+    y=mouse.y;
+    graph=1+(graph==1);
+
+END
+
+END
+
+
+PROCESS enemy()
+
+BEGIN
+
+END
+
+

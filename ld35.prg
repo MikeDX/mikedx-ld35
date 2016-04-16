@@ -37,6 +37,8 @@ END
 
 PROCESS player()
 
+private
+gframe=1;
 
 BEGIN
 
@@ -49,8 +51,9 @@ LOOP
     animtimer++;
     if(animtimer>animspeed)
         animtimer=0;
-        graph=1+(graph==1);
+        gframe=1+(gframe==1);
     end
+    graph = 3+gframe;
 
     frame;
 

@@ -16,7 +16,7 @@ y=200;
 size=50;
 FRAME(2400);
 
-write(1,320,400,4,"LD 35 - Shapeshift # $ %");
+write(1,320,400,4,"LD 35 - Shapeshift #");
 
 LOOP
     FRAME;

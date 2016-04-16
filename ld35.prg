@@ -61,7 +61,7 @@ LOOP
     x=newx;
     //y=mouse.y;
     animtimer++;
-    if(x>161)
+    if(x>131)
         if(!mleft)
             mleft=1;
             goff++;

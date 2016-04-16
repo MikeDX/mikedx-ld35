@@ -101,7 +101,7 @@ graph=7;
 
 LOOP
 
-angle+=4000;
+angle+=80000;
 
 FRAME;
 

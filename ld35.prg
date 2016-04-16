@@ -38,6 +38,7 @@ LOOP
     x=mouse.x;
     y=mouse.y;
     graph=1+(graph==1);
+    frame;
 
 END
 

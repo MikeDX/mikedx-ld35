@@ -46,10 +46,11 @@ BEGIN
 
 graph=1;
 size=300;
+y=320;
 
 LOOP
     x=mouse.x;
-    y=mouse.y;
+    //y=mouse.y;
     animtimer++;
     if(mouse.left)
         if(!mleft)

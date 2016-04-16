@@ -41,7 +41,7 @@ private
 gframe=1;
 goff=0;
 mleft=0;
-
+newx=0;
 BEGIN
 
 graph=1;
@@ -49,16 +49,16 @@ size=300;
 y=320;
 
 LOOP
-    x=320+(sin(timer*1000)*320)/1000;
-    /*if(mouse.x!=x)
-        if(mouse.x<x)
+    newx=320+(sin(timer*1000)*320)/1000;
+    if(newx!=x)
+        if(newx<x)
             flags=1;
         else
             flags=0;
         end
     end
-    */
-    //x=mouse.x;
+
+    x=newx;
     //y=mouse.y;
     animtimer++;
     if(mouse.left)

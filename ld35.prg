@@ -58,7 +58,7 @@ LOOP
         end
     end
     */
-    x=mouse.x;
+    //x=mouse.x;
     //y=mouse.y;
     animtimer++;
     if(mouse.left)

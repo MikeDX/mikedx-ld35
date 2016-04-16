@@ -98,13 +98,16 @@ PROCESS trans(x,y)
 
 BEGIN
 graph=7;
+size=0;
+//LOOP
+size+=10;
 
-LOOP
-
+while (angle<80000*24)
 angle+=80000;
 
 FRAME;
-
 END
+
+//END
 
 END

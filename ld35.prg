@@ -25,7 +25,7 @@ size=50;
 FRAME(2400);
 
 //force_pal("ld35.fpg");
-graph=0;
+//graph=0;
 set_mode(640480);
 write(1,320,400,4,"LD #35 - Shapeshift");
 player();

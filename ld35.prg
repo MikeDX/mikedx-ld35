@@ -97,8 +97,8 @@ graph=7;
 size=0;
 //LOOP
 
-while (angle<80000*24)
-size+=10;
+while (angle<80000*12)
+size+=20;
 x=father.x;
 y=father.y;
 angle+=80000;

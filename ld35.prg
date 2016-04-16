@@ -15,7 +15,7 @@ set_mode(640480);
 load_fpg("ld35.fpg");
 
 load_fnt("font2_32.fnt");
-graph=load_map("gfx/divld35.pcx");
+graph=100;//load_map("gfx/divld35.pcx");
 //force_pal("gfx/divld35.pcx");
 
 x=320;

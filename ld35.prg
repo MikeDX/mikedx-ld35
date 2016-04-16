@@ -49,7 +49,7 @@ size=300;
 y=320;
 
 LOOP
-    x=320+(sin(timer*1000)/1000*320);
+    x=320+(sin(timer*10)/1000*320);
     /*if(mouse.x!=x)
         if(mouse.x<x)
             flags=1;

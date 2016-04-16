@@ -49,7 +49,7 @@ size=300;
 y=320;
 
 LOOP
-    newx=320+(sin(timer*1000)*320)/1000;
+    newx=320+(sin(timer*1000)*160)/1000;
     if(newx!=x)
         if(newx<x)
             flags=1;

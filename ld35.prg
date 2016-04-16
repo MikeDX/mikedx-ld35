@@ -64,6 +64,7 @@ LOOP
     if(x>131)
         if(!mleft)
             mleft=1;
+            trans(x,y);
             goff++;
             if(goff>2)
                 goff=0;
@@ -92,4 +93,18 @@ BEGIN
 
 END
 
+PROCESS trans(x,y)
 
+
+BEGIN
+graph=7;
+
+LOOP
+
+angle+=4000;
+
+FRAME;
+
+END
+
+END

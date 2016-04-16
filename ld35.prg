@@ -53,7 +53,7 @@ LOOP
         animtimer=0;
         gframe=1+(gframe==1);
     end
-    graph = 2+gframe;
+    graph = 4+gframe;
 
     frame;
 

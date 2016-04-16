@@ -49,6 +49,14 @@ size=300;
 y=320;
 
 LOOP
+    if(mouse.x!=x)
+        if(mouse.x<x)
+            flags=1;
+        else
+            flags=0;
+        end
+    end
+
     x=mouse.x;
     //y=mouse.y;
     animtimer++;

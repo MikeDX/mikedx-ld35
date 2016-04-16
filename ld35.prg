@@ -9,6 +9,7 @@ LOCAL
 
 animtimer=0;
 animspeed=5;
+goff=0;
 
 BEGIN
 set_mode(640480);
@@ -39,7 +40,6 @@ PROCESS player()
 
 private
 gframe=1;
-goff=0;
 mleft=0;
 newx=0;
 BEGIN
@@ -65,10 +65,6 @@ LOOP
         if(!mleft)
             mleft=1;
             trans(x,y);
-            goff++;
-            if(goff>2)
-                goff=0;
-            end
         end
     else
         mleft=0;
@@ -109,6 +105,10 @@ angle+=80000;
 
 FRAME;
 END
+father.goff++;
+            if(father.goff>2)
+                father.goff=0;
+            end
 
 //END
 
